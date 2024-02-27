@@ -8,3 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return 'hi from main.py at book_info'
+
+@app.route('/book1')
+def show_book1():
+    return 'book1'
